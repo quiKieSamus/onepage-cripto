@@ -1,12 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/ico.png" type="image/webp" sizes="16x16">
     <title>Criptomonedas</title>
 </head>
+
 <body>
-    
+
+    <nav class="navbar" id="navbarid">
+        <div class="nav-right">
+            <a href="#about" class="nav-item">¿Qué son?</a>
+            <a href="#services" class="nav-item">¿Qué ofrecen?</a>
+            <a href="#location" class="nav-item">Dónde puedes comprar</a>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="hero-text">
+            <p class="hero-title">El futuro de la economía</p>
+            <h2 class="hero-subtext">Criptomonedas</h2>
+            <a href="#about"><button class="hero-btn">Conócenos</button></a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="about" id="about">
+        <div class="ab-area">
+            <div class="ab-item">
+                <div class="ab-pgraphs">
+                    <h2 style="text-align: justify;">¿Qué son?</h2>
+                    <p style="text-align: justify;">Una criptomoneda es un activo digital que emplea un cifrado criptográfico para garantizar su titularidad y asegurar la integridad de las transacciones, y controlar la creación de unidades adicionales, es decir, evitar que alguien pueda hacer copias como haríamos, por ejemplo, con una foto. Estas monedas no existen de forma física: se almacenan en una cartera digital.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/img_1.jpg" alt="image" class="ab-img">
+                    <!--Image Here-->
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <hr>
+    <div class="services" id="services">
+        <h2>¿Qué ofrecen?</h2>
+        <h3>Las criptomonedas ofrecen lo siguiente:</h3>
+        <div class="servicearea">
+            <div class="service-item service-item1">
+                <h4>Descentralización</h4>
+                <p>La mayoría de las criptomonedas operan de manera descentralizada, dependiendo de su algoritmo. Es decir, no están sujetas a regulaciones ni están bajo el control de organismos gubernamentales, ni bancarios o financieros de ningún tipo y todos los usuarios de las mismas tienen los mismos derechos y son iguales entre sí.</p>
+                <div class="service-img">
+                    <img src="img/img_descentralizar.png" alt="image" class="service-img">
+                </div>
+            </div>
+            <div class="service-item service-item2">
+                <h4>Bajos costes de transacción</h4>
+                <p>Las transacciones en los sistemas de criptomonedas se realizan según el principio P2P, sin la participación de un organismo de control central. Es decir, sin ningún intermediario en sus transacciones. </p>
+                <img src="img/img_bajo.jpg" alt="image" class="service-img">
+            </div>
+            <div class="service-item service-item3">
+                <h4>Rapidez e irreversibilidad</h4>
+                <p>Las transacciones de criptomonedas se caracterizan por su alta velocidad de procesamiento. Y una efectividad en términos generales casi inmediata. Esta fue una de las razones de su creación en primer lugar, poder agilizar los lentos procesos de las transacciones bancarias.</p>
+                <img src="img/img_rapidez.jpg" alt="image" class="service-img">
+            </div>
+            <div class="service-item service-item4">
+                <h4>Confidencialidad</h4>
+                <p>La privacidad es una de las principales ventajas de las criptomonedas. Para utilizar el sistema, no necesita proporcionar ningún dato personal, lo que le permite permanecer en el anonimato y ocultar sus costes.</p>
+                <img src="img/img_confidencialidad.jpg" alt="image" class="service-img">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="location" id="location">
+        <h2>Dónde puedes comprar</h2>
+        <div>
+            <img src="img/binance.png" alt="image" width="100" height="50">
+            <a href="https://www.binance.com" target="_blank" class="a-location">Binance</a>
+        </div>
+        <div>
+            <img src="img/bitso.png" alt="image" width="100" height="50">
+            <a href="https://bitso.com" target="_blank" class="a-location">Bitso</a>
+        </div>
+        <div>
+            <img src="img/buda.jpg" alt="image" width="100" height="50">
+            <a href="https://www.buda.com" target="_blank" class="a-location">Buda.com</a>
+        </div>
+    </div>
+    <hr>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>

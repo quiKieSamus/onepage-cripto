@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'roboto';
+}
+
+hr {
+    width: 75%;
+}
+
+
+footer {
+    background-color: darkred;
+    color: white;
+    width: 100%;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../fonts/lato/Lato-Thin.ttf);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s;
+}
+
+.social-icon {
+    cursor: pointer;
+}
+
+.navbar a{
+    float: left;
+    color: darkred;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.nav-right {
+    float: right;
+}
+
+.navbar .icon {
+    display: none;  
+}
+
+
+
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
+    /*Set a specific height*/
+    height: 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-title {
+    font-size: 50px;
+    font-family: 'lato';
+
+}
+
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white/*Set a specific color*/;
+}
+
+.hero-subtext {
+    font-family: 'lato';
+    font-weight: 900;
+}
+
+.hero-btn {
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+.hero-btn:hover {
+    transition: 0.5s;
+    cursor:pointer;
+    background-color: darkred;
+    color: white;
+}
+
+.ab-area {
+    margin: 50px auto;
+    /* background-color: darkred; */
+    border-radius: 5px;
+    /* color: white; */
+}
+
+.ab-item {
+    margin: 10px auto;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.ab-pgraphs {
+    max-width: 45ch;
+}
+
+.ab-img {
+    width: 50%;
+}
+
+.contact {
+    margin-top: 60px;
+}
+
+.contact-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-type-item {
+    align-self: flex-start;
+}
+
+.contact-type-item1, .contact-type-item2 {
+    display: flex;
+    align-items: center;
+}
+
+.formarea{
+    height: 280px;
+}
+
+.services, .formarea {
+    margin: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicearea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    margin: auto 10px;
+    text-align: justify;
+    max-width: 30ch;
+}
+
+.service-img {
+    border-radius: 300px;
+    height: 240px;
+    width: 240px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.a-location {
+    color: black;
+    font-size: larger;
+}
+
+.a-location:hover {
+    text-decoration: underline;
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+.frm-item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.btn-sub {
+    width: 100px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    background-color: lightgray;
+}
+
+.btn-sub:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: darkred;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .ab-img {
+        height: 240px;
+        width: 240px;
+    }
+    
+    .servicearea {
+        justify-content: center;
+    }
+
+    .service-item {
+        margin: 10px auto;
+    }
+    
+    .navbar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar a:not(:first-child){display: none;}
+
+    .navbar a.icon {
+        display: block;
+    }
+
+    .navbar a {
+        float: none;
+        display: block;
+    }
+
+    .nav-right {
+        float: none;
+    }
+
+    .contact-type-item {
+        text-align: center;
+    }
+
+    .navbar a:not(:last-child) {
+        display: none;
+    }
+
+    .hero {
+        height: 110%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+
+  }
